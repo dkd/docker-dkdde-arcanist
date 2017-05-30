@@ -23,7 +23,7 @@ In this case `21fe07925b07` references a Git commit hash in the Arcanist reposit
 
 ### Usage
 
-Create data volume container, name it `arcanist` expose `/arc`:
+Create data volume container, name it `arcanist` and expose `/arc`:
 
     $ docker create -v /arc --name arcanist dkdkd/arcanist:latest /bin/true
 
