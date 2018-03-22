@@ -25,7 +25,7 @@ In this case `21fe07925b07` references a Git commit hash in the Arcanist reposit
 
 Create data volume container, name it `arcanist` and expose `/arc`:
 
-    $ docker create -v /arc --name arcanist dkdde/arcanist:latest /bin/true
+    $ docker create -v /arc --name arcanist dkdde/arcanist:latest
 
 Mount and run Arcanist executable (PHP v7.0):
 
@@ -47,5 +47,4 @@ Try another PHP version (e.g. v7.1):
 Build image, tag appropriately and push to Docker Hub:
 
     $ docker build . --tag dkdde/arcanist
-    $ docker push 
     $ docker push dkdde/arcanist
